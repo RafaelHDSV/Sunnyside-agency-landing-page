@@ -33,6 +33,9 @@ Users should be able to:
   
     ![](images/mobile.png)
 
+
+
+
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
