@@ -26,8 +26,9 @@ Users should be able to:
   
     ![](images/desktop.png)
     
-    
-    
+    <br>
+    <br>
+    <br>
     
   - Mobile
   
