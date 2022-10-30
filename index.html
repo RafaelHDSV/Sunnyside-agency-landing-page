@@ -59,12 +59,22 @@
       align-items: center;
       min-height: 3rem;
       min-width: 100%;
-      padding: 1.5rem 2rem;
+      padding: 3rem 2rem;
     }
 
     nav img {
       max-width: 10rem;
       width: 100%;
+    }
+
+    .hamburguer {
+      display: none;
+      opacity: 0;
+    }
+
+    .hide {
+      display: none;
+      opacity: 0;
     }
 
     .links {
@@ -77,6 +87,13 @@
     .links a {
       font-size: 21px;
       color: var(--white);
+      transition: .5s all ease;
+      cursor: pointer;
+    }
+
+    .links a:hover {
+      color: var(--dark-desaturated-cyan);
+      transform: scale(80%);
     }
 
     .btn_primary {
@@ -98,7 +115,38 @@
       transform: scale(95%);
     }
 
-    header h1 {
+    .btn_secondary {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-size: 16px;
+      border: none;
+      background-color: var(--yellow);
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      border-radius: 3rem;
+      transition: .5s all ease;
+      cursor: pointer;
+    }
+
+    .btn_secondary:hover {
+      background-color: hsla(51, 100%, 49%, 0.3);
+      color: var(--very-dark-grayish-blue);
+      transform: scale(95%);
+    }
+
+    .header_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: 'Fraunces', serif;
       font-weight: 900;
       font-size: 60px;
@@ -106,12 +154,14 @@
       letter-spacing: 1rem;
       text-align: center;
       color: var(--white);
-      margin-top: 8rem;
+      height: 100vh;
+      padding-bottom: 28rem;
     }
 
     .icon_arrow {
+      position: absolute;
+      top: 45%;
       max-width: 2.5rem;
-      margin-top: 7rem;
     }
 
     .about {
@@ -139,7 +189,6 @@
       width: 50%;
       height: 45rem;
       gap: 3rem;
-      padding: 3rem 15rem;
     }
 
     .text h2 {
@@ -417,14 +466,61 @@
       color: hsl(228, 45%, 44%);
     }
 
-    /* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA */
     @media screen and (max-width: 1000px) {
       header {
         background-image: url('images/mobile/image-header.jpg');
       }
 
+      nav {
+        padding: 3rem 2rem;
+      }
+
+      .hamburguer {
+        display: flex;
+        max-width: 3rem;
+        width: 100%;
+        opacity: 1;
+      }
+
+      .links_hamburguer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white);
+        padding: 2.5rem 6rem;
+        gap: 2rem;
+        position: relative;
+        opacity: 1;
+        transition: .5s all ease;
+      }
+
+      .links_hamburguer a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        color: var(--very-dark-grayish-blue);
+      }
+
+      .links_hamburguer::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border: 25px solid;
+        border-color: transparent var(--white) var(--white) transparent;
+        position: absolute;
+        top: -1.5rem;
+        right: 0;
+      }
+
       .links {
         display: none;
+      }
+
+      h1 {
+        font-size: 48px;
       }
 
       .transform,
@@ -439,8 +535,10 @@
         justify-content: center;
         align-items: center;
         background-color: var(--white);
+        max-width: 100%;
+        min-height: 35rem;
         width: 100%;
-        height: 35rem;
+        height: 100%;
         gap: 2rem;
         padding: 0;
         margin: 0;
@@ -454,7 +552,10 @@
         font-size: 50px;
         line-height: 3rem;
         color: var(--very-dark-desaturated-blue);
-        width: 28.8rem;
+        max-width: 28.8rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
       }
 
       .text p {
@@ -462,7 +563,10 @@
         color: var(--dark-grayish-blue);
         font-size: 18px;
         line-height: 2rem;
-        width: 28.8rem;
+        max-width: 28.8rem;
+        width: 90%;
+        height: 100%;
+        text-align: center;
       }
 
       .text a {
@@ -474,8 +578,11 @@
         line-height: 3rem;
         text-transform: uppercase;
         color: var(--very-dark-desaturated-blue);
-        width: 28.8rem;
+        max-width: 28.8rem;
+        width: 100%;
+        height: 100%;
         z-index: 1;
+        text-align: center;
       }
 
       .text a::after {
@@ -566,7 +673,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 5rem;
+        padding: 2rem;
         gap: 5rem;
       }
 
@@ -593,49 +700,29 @@
         gap: 1rem;
       }
 
-      .client img {
-        max-width: 5rem;
-        border-radius: 50%;
-      }
-
       .client p {
-        font-family: 'Barlow', sans-serif;
-        font-size: 18px;
-        line-height: 2rem;
-        color: var(--very-dark-desaturated-blue);
-        max-width: 22.5rem;
+        max-width: 95%;
       }
 
       .name p:nth-child(1) {
-        font-family: 'Fraunces', serif;
-        font-weight: 900;
-        font-size: 26px;
-        color: var(--very-dark-desaturated-blue);
+        max-width: 100%;
       }
 
       .name p:nth-child(2) {
-        font-family: 'Barlow', sans-serif;
-        font-weight: 600;
-        font-size: 14px;
-        color: var(--grayish-blue);
+        max-width: 100%;
       }
 
       .projects {
-        display: flex;
         flex-direction: row;
-        justify-content: center;
-        align-items: center;
         width: 100%;
       }
 
       .projects div {
-        display: flex;
         flex-direction: column;
         width: 50%;
       }
 
       .projects img {
-        object-fit: cover;
         width: 100%;
       }
 
@@ -685,6 +772,12 @@
         fill: var(--grayish-blue);
       }
     }
+
+    @media screen and (max-width: 430px) {
+      h1 {
+        font-size: 30px;
+      }
+    }
   </style>
 </head>
 
@@ -699,10 +792,23 @@
         <a href="">Projects</a>
         <button class="btn_primary">Contact</button>
       </div>
+
+      <img class="hamburguer" src="/Sunnyside Landing Page/images/icon-hamburger.svg" alt="icon-hamburger.svg">
     </nav>
 
-    <h1>We are Creatives</h1>
-    <img class="icon_arrow" src="/Sunnyside Landing Page/images/icon-arrow-down.svg" alt="icon-arrow-down.svg">
+    <div id="hide" class="hide">
+      <div class="links_hamburguer">
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">Projects</a>
+        <button class="btn_secondary">Contact</button>
+      </div>
+    </div>
+
+    <div class="header_text">
+      <h1>We are Creatives</h1>
+      <img class="icon_arrow" src="/Sunnyside Landing Page/images/icon-arrow-down.svg" alt="icon-arrow-down.svg">
+    </div>
   </header>
 
   <section class="about">
@@ -837,6 +943,20 @@
       <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
     </footer>
   </section>
+
+  <script>
+    let hamburguer = document.querySelector('.hamburguer')
+    let links = document.querySelector('.links_hamburguer')
+    let hide = document.getElementById('hide')
+
+    hamburguer.addEventListener('click', () => {
+      if (hide.classList.contains('hide')) {
+        hide.classList.remove('hide')
+      } else {
+        hide.classList.add('hide')
+      }
+    })
+  </script>
 </body>
 
 </html>
