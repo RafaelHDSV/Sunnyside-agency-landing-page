@@ -6,10 +6,10 @@ This is a solution to the [Sunnyside agency landing page challenge on Frontend M
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Screenshot](#screenshot)
 
 ## Overview
 
@@ -19,24 +19,6 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-
-### Screenshot
-
-  - Desktop
-  
-    ![](images/desktop.png)
-    
-    <br>
-    <br>
-    <br>
-    
-  - Mobile
-  
-    ![](images/mobile.png)
-
-    <br>
-    <br>
-    <br>
 
 ### Links
 
@@ -52,3 +34,17 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+
+### Screenshot
+
+  - Desktop
+  
+    ![](images/desktop.png)
+    
+    <br>
+    <br>
+    <br>
+    
+  - Mobile
+  
+    ![](images/mobile.png)
