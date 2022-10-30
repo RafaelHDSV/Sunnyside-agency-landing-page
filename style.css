@@ -235,7 +235,7 @@ h1 {
 
 .transform .image {
     display: flex;
-    background-image: url('/Sunnyside Landing Page/images/image-transform.jpg');
+    background-image: url('images/image-transform.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -245,7 +245,7 @@ h1 {
 
 .stand_out .image {
     display: flex;
-    background-image: url('/Sunnyside Landing Page/images/image-stand-out.jpg');
+    background-image: url('images/image-stand-out.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -264,7 +264,7 @@ h1 {
 
 .graphic_design {
     position: relative;
-    background-image: url('/Sunnyside Landing Page/images/image-graphic-design.jpg');
+    background-image: url('images/image-graphic-design.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -274,7 +274,7 @@ h1 {
 
 .photography {
     position: relative;
-    background-image: url('/Sunnyside Landing Page/images/image-photography.jpg');
+    background-image: url('images/image-photography.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -575,7 +575,7 @@ h1 {
 
     .transform .image {
         display: flex;
-        background-image: url('/Sunnyside Landing Page/images/mobile/image-transform.jpg');
+        background-image: url('images/mobile/image-transform.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -586,7 +586,7 @@ h1 {
 
     .stand_out .image {
         display: flex;
-        background-image: url('/Sunnyside Landing Page/images/mobile/image-stand-out.jpg');
+        background-image: url('images/mobile/image-stand-out.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -605,7 +605,7 @@ h1 {
 
     .graphic_design {
         position: relative;
-        background-image: url('/Sunnyside Landing Page/images/mobile/image-graphic-design.jpg');
+        background-image: url('images/mobile/image-graphic-design.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -615,7 +615,7 @@ h1 {
 
     .photography {
         position: relative;
-        background-image: url('/Sunnyside Landing Page/images/mobile/image-photography.jpg');
+        background-image: url('images/mobile/image-photography.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
