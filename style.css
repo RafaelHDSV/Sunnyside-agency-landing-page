@@ -235,7 +235,7 @@ h1 {
 
 .transform .image {
     display: flex;
-    background-image: url('images/image-transform.jpg');
+    background-image: url('/Sunnyside Landing Page/images/image-transform.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -245,7 +245,7 @@ h1 {
 
 .stand_out .image {
     display: flex;
-    background-image: url('images/image-stand-out.jpg');
+    background-image: url('/Sunnyside Landing Page/images/image-stand-out.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -264,7 +264,7 @@ h1 {
 
 .graphic_design {
     position: relative;
-    background-image: url('images/image-graphic-design.jpg');
+    background-image: url('/Sunnyside Landing Page/images/image-graphic-design.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -274,7 +274,7 @@ h1 {
 
 .photography {
     position: relative;
-    background-image: url('images/image-photography.jpg');
+    background-image: url('/Sunnyside Landing Page/images/image-photography.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -476,6 +476,7 @@ h1 {
         position: relative;
         opacity: 1;
         transition: .5s all ease;
+        z-index: 1;
     }
 
     .links_hamburguer a {
@@ -503,6 +504,8 @@ h1 {
     }
 
     h1 {
+        position: absolute;
+        top: 10%;
         font-size: 48px;
     }
 
@@ -536,7 +539,7 @@ h1 {
         line-height: 3rem;
         color: var(--very-dark-desaturated-blue);
         max-width: 28.8rem;
-        width: 100%;
+        width: 90%;
         height: 100%;
         text-align: center;
     }
@@ -575,7 +578,7 @@ h1 {
 
     .transform .image {
         display: flex;
-        background-image: url('images/mobile/image-transform.jpg');
+        background-image: url('/Sunnyside Landing Page/images/mobile/image-transform.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -586,7 +589,7 @@ h1 {
 
     .stand_out .image {
         display: flex;
-        background-image: url('images/mobile/image-stand-out.jpg');
+        background-image: url('/Sunnyside Landing Page/images/mobile/image-stand-out.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -605,7 +608,7 @@ h1 {
 
     .graphic_design {
         position: relative;
-        background-image: url('images/mobile/image-graphic-design.jpg');
+        background-image: url('/Sunnyside Landing Page/images/mobile/image-graphic-design.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -615,7 +618,7 @@ h1 {
 
     .photography {
         position: relative;
-        background-image: url('images/mobile/image-photography.jpg');
+        background-image: url('/Sunnyside Landing Page/images/mobile/image-photography.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -666,6 +669,7 @@ h1 {
         text-transform: uppercase;
         letter-spacing: .5rem;
         color: var(--grayish-blue);
+        text-align: center;
     }
 
     .clients_container {
